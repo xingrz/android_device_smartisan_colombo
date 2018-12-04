@@ -38,5 +38,8 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
+# Releasetools
+TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
+
 # inherit from the proprietary version
 -include vendor/smartisan/colombo/BoardConfigVendor.mk
