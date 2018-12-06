@@ -22,3 +22,13 @@ export DEVICE_COMMON=msm8996-common
 export VENDOR=smartisan
 
 ./../../$VENDOR/$DEVICE_COMMON/extract-files.sh $@
+
+MY_DIR="${BASH_SOURCE%/*}"
+if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
+MK_ROOT="$MY_DIR"/../../..
+
+BLOB_ROOT="$MK_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
+
+# Audio
+sed -i 's|/system/etc/|/vendor/etc/|g' $BLOB_ROOT/vendor/lib/hw/audio.primary.msm8996.so
+sed -i 's|/system/etc/|/vendor/etc/|g' $BLOB_ROOT/vendor/lib64/hw/audio.primary.msm8996.so
