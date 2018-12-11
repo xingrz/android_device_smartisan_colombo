@@ -1,10 +1,10 @@
 [
   {
     "repository": "android_device_smartisan_msm8996-common",
-    "target_path": "device/qcom/common"
+    "target_path": "device/smartisan/msm8996-common"
   },
   {
-   "repository": "android_vendor_smartisan_colombo",
-   "target_path": "vendor/smartisan/colombo"
+    "repository": "android_vendor_smartisan_colombo",
+    "target_path": "vendor/smartisan/colombo"
   }
 ]
