@@ -21,6 +21,8 @@ export DEVICE=colombo
 export DEVICE_COMMON=msm8996-common
 export VENDOR=smartisan
 
+export DEVICE_BRINGUP_YEAR=2018
+
 ./../../$VENDOR/$DEVICE_COMMON/extract-files.sh $@
 
 MY_DIR="${BASH_SOURCE%/*}"
