@@ -43,6 +43,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := SMARTISAN/colombo/colombo:6.0.1/MXB48T/1:user/release-keys
 
 # Sign bootable images
+PRODUCT_SUPPORTS_VERITY := true
 PRODUCT_SUPPORTS_BOOT_SIGNER := true
 PRODUCT_VERITY_SIGNING_KEY := build/target/product/security/verity
 
