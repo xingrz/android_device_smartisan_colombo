@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/mk_colombo.mk
+    $(LOCAL_DIR)/omni_colombo.mk
